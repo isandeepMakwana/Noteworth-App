@@ -57,7 +57,7 @@ export default class Post extends Component {
                         </MDBCol>
                         <MDBCol md="6">
                             <form onSubmit={this.onSubmit}>
-                                <p className="h4 text-center mb-4">TO-DO Application</p>
+                                <p className="h4 text-center mb-4">Add Your Food item</p>
                                 <label htmlFor="defaultFormLoginEmailEx" className="grey-text">
                                     name
                                 </label>

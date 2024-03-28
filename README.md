@@ -29,6 +29,7 @@ git clone <link>
 
 #### Run initial migrations for the backend by executing the following command:
 
+
 ```bash
 bin/restaurant update_database
 ```
@@ -80,4 +81,11 @@ bin/restaurant tests
 
 
 
-> This README provides clear instructions on how to set up and use the Noteworth App, ensuring a smooth experience for developers and users alike.
+> This README provides clear instructions on how to set up and use the Noteworth App, ensuring a smooth experience for developers and users.
+
+### SS
+
+![](./bin/1.png)
+![](./bin/2.png)
+
+
