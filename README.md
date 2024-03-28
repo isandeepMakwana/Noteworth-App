@@ -20,7 +20,7 @@ The Noteworth App is a streamlined solution for managing restaurant information.
 Clone the project repository using the following command:
 
 ```bash
-git clone <link>
+git clone https://github.com/isandeepMakwana/Noteworth-App.git
 ```
 
 ### Setting Up Backend
@@ -31,6 +31,8 @@ git clone <link>
 
 
 ```bash
+python3 -m venv venv
+source venv/bin/activate
 bin/restaurant update_database
 ```
 
@@ -45,6 +47,7 @@ bin/restaurant server
 #### Start the React app with the following command:
 
 ```bash
+npm i 
 bin/restaurant client
 ```
 
