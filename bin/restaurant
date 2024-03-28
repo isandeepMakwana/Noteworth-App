@@ -1,0 +1,35 @@
+#!/bin/bash
+set -e
+
+#################################################################
+##
+##  Run the API
+##
+#################################################################
+
+server () {
+    echo "Run Backend Python server"
+    python3 noteworth//manage.py runserver
+}
+
+update_database(){
+  echo "Run Migration"
+  python3 noteworth//manage.py makemigrations &&
+  python3 noteworth//manage.py migrate
+}
+
+client (){
+    echo "Run client react "
+    if [ ! -d frontend/restaurants/node_modules ];then
+      echo "install node packages "
+      npm install --prefix frontend/restaurants
+    fi
+    npm start --prefix frontend/restaurants/
+}
+
+tests () {
+  echo "Run test case"
+ python3 noteworth/manage.py test noteworth/restaurants
+}
+
+$*
